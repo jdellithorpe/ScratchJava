@@ -29,5 +29,9 @@ public class App {
       Map<Object, Object> map2 = new ArrayMap<>();
 
       System.out.println(GraphLayout.parseInstance(map2).toFootprint());
+
+      map2.put(a, b);
+
+      System.out.println(GraphLayout.parseInstance(map2).toFootprint());
     }
 }
